@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+    margin: 0 auto;
+}
+img{
+    margin: 0 auto;
+}
+.container{
+    margin: 0 auto;
+}
+.navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+  }
+  
+  .navList li {
+    margin-right: 20px;
+    padding: 14px 44px;
+    border-radius: 12px;
+    background: #494D5F;
+  }
+
+  .activeLink {
+   color: pink;
+  }
