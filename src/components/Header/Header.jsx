@@ -1,26 +1,23 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import logo from '../../assets/logo.svg';
-import styles from './Header.module.css';
-
+import React from "react";
+import { NavLink } from "react-router-dom";
+import css from "./Header.module.css";
+import logo from '../../assets/images/logo.svg';
 const Header = () => {
   return (
-    <header className='container'>
-      <div className='logoContainer'>
-        <img className='logo' src={logo} alt="" height={164} width={164} />
+    <header>
+      <nav className={css.header}>
+      <div className={css.logo}>
+        <img className='logo' src={logo} alt="logo" />
       </div>
-      <nav>
-        <ul className={styles['navList']}>
-          <li>
-            <NavLink exact="true" to="/" activeclassname={styles.activeLink}>HomePage</NavLink>
-          </li>
-          <li>
-            <NavLink to="/catalog" activeclassname={styles.activeLink}>Catalog</NavLink>
-          </li>
-          <li>
-            <NavLink to="/favorites" activeclassname={styles.activeLink}>Favorites</NavLink>
-          </li>
-        </ul>
+        <NavLink className={css.headerText} to="/">
+          Home
+        </NavLink>
+        <NavLink className={css.headerText} to="/catalog">
+          Catalog
+        </NavLink>
+        <NavLink className={css.headerText} to="/favorites">
+          Favorites
+        </NavLink>
       </nav>
     </header>
   );

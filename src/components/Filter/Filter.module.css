@@ -1,0 +1,19 @@
+.iconChevron {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  fill: #121417;
+  stroke: #121417;
+}
+.filterContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 224px;
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 32px;
+border-radius: 14px;
+}

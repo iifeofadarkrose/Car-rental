@@ -1,10 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
+import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
+import App from './App';
+import { PersistGate } from 'redux-persist/integration/react'
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import { persistor } from './redux/store';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/car-rent-app">
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <App />
+        </PersistGate>
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
+
+
