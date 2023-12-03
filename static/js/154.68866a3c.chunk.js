@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rental=self.webpackChunkcar_rental||[]).push([[154],{154:(e,a,s)=>{s.r(a),s.d(a,{default:()=>l});s(791);var c=s(87);const n="NotFoundPage_title__uDivS",o="NotFoundPage_direction__HHCsJ",t="NotFoundPage_link__iZyh1";var r=s(329);const l=()=>(0,r.jsxs)("div",{children:[(0,r.jsx)("h1",{className:n,children:"There is no suck page!"}),(0,r.jsx)("h3",{className:o,children:"You can go back to the Home page"}),(0,r.jsx)(c.rU,{to:"/",className:t,children:"Home Page"})]})}}]);
+//# sourceMappingURL=154.68866a3c.chunk.js.map
